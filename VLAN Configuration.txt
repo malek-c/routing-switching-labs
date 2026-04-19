@@ -1,1 +1,47 @@
+#Packet Tracer : configuration des VLAN
+#1:Créez et nommez des VLAN sur SW1/SW2:
+enable
+conf t
+vlan 10
+name VLAN10
+exit
 
+vlan 20
+name VLAN20
+exit
+
+vlan 30
+name VLAN30
+exit
+#2:Attribution des ports(SW1/SW2):
+interface fa0/1
+switchport mode access
+switchport access vlan 10
+exit
+
+interface fa0/2
+switchport mode access
+switchport access vlan 20
+exit
+
+interface fa0/3
+switchport mode access
+switchport access vlan 30
+exit
+#3:Configuration TRUNK (entre SW1 et SW2):
+interface fa0/4
+switchport mode trunk
+exit
+#4:Configuration des PCs:
+VLAN 10
+PC0 ip :192.168.1.1 /24
+PC3 ip : 192.168.1.2 /24
+VLAN 20
+PC1 ip:  192.168.2.1 /24
+PC4 ip: 192.168.2.2 /24
+VLAN 30
+PC2 ip: 192.168.3.1 /24
+PC5 ip: 192.168.3.2 /24
+#5: Vérification:
+show vlan brief
+show interfaces trunk
