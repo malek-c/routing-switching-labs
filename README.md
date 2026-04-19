@@ -8,7 +8,7 @@ Il couvre :
 ---
 ## 📁 Structure
 - `switch-basics/` → Configuration de base des switches
-- `vlan-labs/` → Configuration des VLANs (bientôt)
+- `vlan-labs/` → Configuration des VLANs
 - `routing-labs/` → Travaux de routage (bientôt)
 ---
 ## 🚀 Outil utilisé
