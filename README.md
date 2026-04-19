@@ -3,12 +3,12 @@
 Ce dépôt contient des travaux pratiques de réseau réalisés avec Cisco Packet Tracer.  
 Il couvre :
 - Configuration des switches
-- VLAN (bientôt disponible)
+- VLAN 
 - Routage (bientôt disponible)
 ---
 ## 📁 Structure
-- `switch-basics/` → Configuration de base des switches
-- `vlan-labs/` → Configuration des VLANs
+- `switch-basic/` → Configuration de base des switches
+- `vlan-config/` → Configuration des VLANs
 - `routing-labs/` → Travaux de routage (bientôt)
 ---
 ## 🚀 Outil utilisé
