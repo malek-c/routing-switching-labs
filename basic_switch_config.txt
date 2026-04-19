@@ -1,0 +1,29 @@
+#Packet Tracer - Configuration des paramètres initiaux du commutateur
+#1:  Attribuez un nom au commutateur.
+enable
+configure terminal
+hostname SW1
+#2:Sécurisez l'accès à la ligne de console.
+line console 0
+password your_password
+login
+exit
+#3:Configurez un mot de passe chiffré pour sécuriser l'accès au mode privilégié.
+enable secret your_password
+#4:Chiffrez les mots de passe d'activation (enable) et de console.
+service password-encryption
+#5:Activation de l’interface.
+interface fa0/1
+no shutdown
+exit
+interface fa0/2
+no shutdown
+exit
+#6:Configurer une bannière MOTD.
+banner motd "TP1 Réseaux - Projet GitHub "
+#7:  Enregistrer les fichiers de configuration dans la mémoire NVRAM.
+copy running-config startup-config
+---------
+# Configuration des PCs.
+PC1: 192.168.10.1
+PC2: 192.168.10.2
